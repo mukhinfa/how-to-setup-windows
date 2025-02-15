@@ -15,7 +15,8 @@ wsl --set-default-version 2
 
 Restart-Computer
 ```
-
+## Linux
+### Tools
 ```shell
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 
