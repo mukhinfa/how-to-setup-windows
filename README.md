@@ -10,7 +10,8 @@ choco install vcredist140 vcredist2015 vcredist2010 vcredist2008 vcredist2017 vc
 #browser
 choco install firefox -y
 #development
-choco install git.install vscode cursoride docker-desktop dbeaver  -y
+choco install git.install vscode cursoride docker-desktop dbeaver virtualbox -y
+
 #other
 choco install vlc audacity obs-studio.install sumatrapdf qbittorrent fsviewer zoom -y
 
