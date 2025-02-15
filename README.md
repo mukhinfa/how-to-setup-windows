@@ -5,10 +5,14 @@
 Set-ExecutionPolicy Bypass -Scope Process
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
+#system
+choco install vcredist140 vcredist2015 vcredist2010 vcredist2008 vcredist2017 vcredist2013 -y
+#browser
 choco install firefox -y
-
-choco install git.install vscode cursoride docker-desktop  -y
+#development
+choco install git.install vscode cursoride docker-desktop dbeaver  -y
+#other
+choco install vlc audacity obs-studio.install sumatrapdf qbittorrent fsviewer zoom -y
 
 wsl --install -d Ubuntu
 wsl --set-default-version 2
