@@ -29,7 +29,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 sudo apt install zsh curl wget tree bat zip unzip tar git gpg make build-essential gcc -y
 
 ```
-####zsh
+#### zsh
 ```shell
 sudo apt install powerline fonts-powerline
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
