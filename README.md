@@ -2,6 +2,7 @@
 
 ## Windows
 ```powershell
+#Run in PowerShell as Administrator
 #install choco
 Set-ExecutionPolicy Bypass -Scope Process
 
