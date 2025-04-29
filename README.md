@@ -66,8 +66,9 @@ chsh -s /bin/zsh
 
 ### Go
 ```shell
-wget https://dl.google.com/go/go1.24.0.linux-amd64.tar.gz 
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xvf go1.24.0.linux-amd64.tar.gz
+curl -sSL https://golang.org/dl/$(curl -s https://golang.org/VERSION?m=text | head -n1).linux-amd64.tar.gz -o go_latest.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xvf go_latest.tar.gz
+rm go_latest.tar.gz
 
 export GOROOT=/usr/local/go >> ~/.zshrc
 export GOPATH=$HOME/go >> ~/.zshrc
