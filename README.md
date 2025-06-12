@@ -99,7 +99,6 @@ export GOROOT=/usr/local/go >> ~/.zshrc
 export GOPATH=$HOME/go >> ~/.zshrc
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH >> ~/.zshrc
 source ~/.zshrc
-rm go1.24.0.linux-amd64.tar.gz
 
 go version
 ```
