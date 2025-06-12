@@ -27,7 +27,7 @@ Restart-Computer
 ```shell
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 
-sudo apt install zsh curl wget tree bat zip unzip tar git gpg make build-essential gcc -y
+sudo apt install zsh curl wget tree bat zip unzip tar git gpg make build-essential gcc ripgrep -y
 
 ```
 #### zsh
@@ -53,8 +53,33 @@ nano ~/.zshrc
 ```
 add plugin
 ```shell
-plugins=(git zsh-autosuggestions)
+plugins=(
+    git
+    z
+    zsh-autosuggestions
+    zsh-color-logging
+    docker
+    docker-compose
+    history
+    eza-zsh
+    colorize
+    command-not-found
+    copyfile
+    copypath
+    dotenv
+    golang
+    gnu-utils
+    iterm2
+    man
+    ssh
+    sudo
+)
 ```
+add alias (optional)
+'''shell
+alias ls='eza --tree --level=1 --icons=always --no-time --color=always --no-user --no-permissions'
+'''
+
 Upd config
 ```shell
 source ~/.zshrc
