@@ -27,7 +27,7 @@ Restart-Computer
 ```shell
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove
 
-sudo apt install zsh curl wget tree bat zip unzip tar git gpg make build-essential gcc ripgrep -y
+sudo apt install zsh curl wget tree bat zip unzip tar git gpg make build-essential gcc ripgrep eza -y
 
 ```
 #### zsh
