@@ -64,7 +64,6 @@ plugins=(
     dotenv
     golang
     gnu-utils
-    iterm2
     man
     ssh
     sudo
