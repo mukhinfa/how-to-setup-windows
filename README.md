@@ -41,11 +41,7 @@ change theme
 ```shell
 ZSH_THEME="agnoster"
 ```
-Syntax Highlighting
-```shell
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.zsh-syntax-highlighting" --depth 1
-echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc"
-```
+
 Autosuggestions
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -57,7 +53,6 @@ plugins=(
     git
     z
     zsh-autosuggestions
-    zsh-color-logging
     docker
     docker-compose
     history
@@ -76,9 +71,10 @@ plugins=(
 )
 ```
 add alias (optional)
-'''shell
+```shell
+
 alias ls='eza --tree --level=1 --icons=always --no-time --color=always --no-user --no-permissions'
-'''
+```
 
 Upd config
 ```shell
@@ -91,7 +87,8 @@ chsh -s /bin/zsh
 
 ### Go
 ```shell
-curl -sSL https://golang.org/dl/$(curl -s https://golang.org/VERSION?m=text | head -n1).linux-amd64.tar.gz -o go_latest.tar.gz
+cd ~/Downloads
+wget https://go.dev/dl/go1.20.14.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xvf go_latest.tar.gz
 rm go_latest.tar.gz
 
