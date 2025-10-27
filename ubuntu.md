@@ -129,6 +129,20 @@ install
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+### Alacritty
+install deps
+```shell
+sudo apt install -y alacritty
+```
+create dir
+```shell
+mkdir -p ~/.config/alacritty
+```
+clone
+```shell
+wget -O ~/.config/alacritty/alacritty.toml https://raw.githubusercontent.com/mukhinfa/how-to-setup-linux-workspace/master/configs/alacritty.toml
+```
+
 
 ## Go
 ```shell
